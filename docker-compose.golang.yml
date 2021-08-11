@@ -1,0 +1,8 @@
+version: '3'
+services:
+  my-golang-api:
+    build:
+      context: .
+      dockerfile: Dockerfile.golang
+    ports:
+      - "7001:7001"
