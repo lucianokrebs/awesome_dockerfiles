@@ -6,8 +6,15 @@ golang, nodejs, python).
 ## List of contents:
 
 - [Golang](#golang)
+- [Python](#python)
 
 ### Golang
 
 - [Dockerfile](Dockerfile.golang)
 - [docker-compose](docker-compose.golang.yml)
+
+### Python
+
+- [Dockerfile for FastAPI in production environment](Dockerfile.fastapi)
+- [Dockerfile for FastAPI in development environment](Dockerfile.fastapi_dev)
+- [docker-compose for FastAPI in development environment](docker-compose.fastapi.yml)
