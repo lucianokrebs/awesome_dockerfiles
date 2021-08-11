@@ -1,0 +1,16 @@
+FROM python:3.7
+
+WORKDIR /app
+COPY requirements.txt .
+COPY .env .
+
+RUN pip3 install -r requirements.txt
+
+EXPOSE 9002
+ENV PORT=9002
+
+COPY ./app /app/app
+COPY ./scripts /app/scripts
+RUN chmod 777 scripts/start_dev.sh
+
+CMD scripts/start_dev.sh

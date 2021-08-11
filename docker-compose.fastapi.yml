@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  my-fastapi-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.fastapi_dev
+    command: bash -c " scripts/start_dev.sh "
+    volumes:
+      - "./:/app"
+    ports:
+      - "9002:9002"
