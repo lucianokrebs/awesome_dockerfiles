@@ -23,3 +23,32 @@ golang, nodejs, python).
 ### React app
 
 - [Dockerfile](Dockerfile.react_app)
+
+---
+
+### Docker cheat sheet
+
+```shell
+# basic commands
+docker login
+docker build . -t my-user/my-app:latest
+docker run -p 8080:80 my-user/my-app:latest
+docker push my-user/my-app:latest
+
+docker ps
+docker ps -a
+docker run hello-world
+docker run -it ubuntu bash
+
+# clean up
+docker system df
+docker system prune
+```
+
+### Docker compose cheat sheet
+
+```shell
+docker compose up --build
+docker compose up --build my-specific-service
+docker compose up --build --force-recreate --remove-orphans
+```
