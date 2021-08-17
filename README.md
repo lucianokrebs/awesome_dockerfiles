@@ -7,6 +7,7 @@ golang, nodejs, python).
 
 - [Golang](#golang)
 - [Python](#python)
+- [React app](#react-app)
 
 ### Golang
 
@@ -18,3 +19,7 @@ golang, nodejs, python).
 - [Dockerfile for FastAPI in production environment](Dockerfile.fastapi)
 - [Dockerfile for FastAPI in development environment](Dockerfile.fastapi_dev)
 - [docker-compose for FastAPI in development environment](docker-compose.fastapi.yml)
+
+### React app
+
+- [Dockerfile](Dockerfile.react_app)
