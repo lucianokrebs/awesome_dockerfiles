@@ -37,8 +37,16 @@ docker push my-user/my-app:latest
 
 docker ps
 docker ps -a
+
 docker run hello-world
 docker run -it ubuntu bash
+docker run -it --rm ubuntu bash
+docker run -it --rm -d -p 8081:80 nginx
+
+docker container stop $container_id_one $container_id_two
+docker container rm $container_id
+docker logs -f $container_id
+docker exec -it nginx bash
 
 # clean up
 docker system df
