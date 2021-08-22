@@ -51,6 +51,8 @@ docker exec -it nginx bash
 # clean up
 docker system df
 docker system prune
+docker volume prune
+docker rm $(docker ps -a -q) -f
 ```
 
 ### Docker compose cheat sheet
